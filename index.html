@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Manager</title>
     <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./Assets/css/moneymanager.css">
 </head>
 <body>
     
     <div class="container">
-        <header>
-            Money Manager
+        
+        <header id="kep">
+            <strong>Money Manager</strong> <i class="bi bi-wallet"></i>   
         </header>
-
+        
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menü</a>
+              <a class="navbar-brand" href="#">Menü <i class="bi bi-three-dots-vertical"></i></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -36,19 +38,19 @@
                 <!-- bejelentkezve -->
                 <ul class="navbar-nav d-none" id="loggedInMenu">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="render('newdata'); getToday();">Adatrögzítés</a>
+                        <a class="nav-link" href="#" onclick="render('newdata'); getToday();"> <i class="bi bi-plus"></i>Adatrögzítés</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="render('table'); renderData();">Táblázat</a>
+                        <a class="nav-link" href="#" onclick="render('table'); renderData();">Táblázat <i class="bi bi-file-spreadsheet-fill"></i></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="render('calendar'); showCalendar()">Naptár</a>
+                        <a class="nav-link" href="#" onclick="render('calendar'); showCalendar()">Naptár <i class="bi bi-calendar-day"></i></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="render('chart'); showChart();">Grafikon</a>
+                        <a class="nav-link" href="#" onclick="render('chart'); showChart();">Grafikon <i class="bi bi-graph-up-arrow"></i></a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="logout()">Kilépés</a>
+                        <a class="nav-link" href="#" onclick="logout()">Kilépés <i class="bi bi-box-arrow-right"></i></a>
                     </li>     
                 </ul>
               </div>

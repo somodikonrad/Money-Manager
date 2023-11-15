@@ -5,11 +5,11 @@ body{
 }
 
 header{
-    background-color: slategray;
-    line-height: 120px;
-    min-height: 120px;  
-    color: white;
-    text-shadow: 0 0 3px black;
+    background-image: url(/kep/money.jpg);
+    opacity: 0.4;
+    line-height: 350px;
+    min-height: 350px;  
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 200%;
 }
@@ -42,4 +42,9 @@ main{
 #myChart{
     width: 100%;
     height: 400px;
+}
+
+
+h1{
+
 }
