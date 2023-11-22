@@ -10,24 +10,22 @@
 </div>
 
 <div class="form-floating mb-3">
-    <input type="number" class="form-control" id="steps" placeholder="" min="0">
-    <label for="steps">Bevétel</label>
+    <select class="form-select" id="type" aria-label="Floating label select example">
+      <option value="Bevétel">Bevétel</option>
+      <option value="Kiadás">Kiadás</option>
+    </select>
+    <label for="floatingSelect">Bevétel / Kiadás</label>
 </div>
 
 <div class="form-floating mb-3">
-    <input type="number" class="form-control" id="steps" placeholder="" min="0" >
-    <label for="steps">Kiadás</label>
+    <input type="number" class="form-control" id="amount" placeholder="" min="0">
+    <label for="amount">Összeg</label>
 </div>
 
 <div class="form-floating mb-3">
-    <input type="number" class="form-control" id="osszeg" placeholder="" min="0">
-    <label for="osszeg">Összeg</label>
-</div>
-
-<div class="form-floating mb-3">
-    <input type="text" class="form-control" id="cim" placeholder="">
-    <label for="cim">Címke</label>
+    <input type="text" class="form-control" id="tag" placeholder="">
+    <label for="tag">Címke</label>
 </div>
 
 
-<button class="btn btn-primary mb-3" onclick="addSteps()">Rögzítés</button>
+<button class="btn btn-primary mb-3" onclick="addMoney()">Rögzítés</button>

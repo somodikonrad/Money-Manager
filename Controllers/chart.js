@@ -3,16 +3,16 @@ function showChart(){
     let labels = [];
     let datas = [];
 
-  axios.get(`${serverURL}/steps/userID/eq/${loggedUser.ID}`).then((res) => {
+  axios.get(`${serverURL}/items/userID/eq/${loggedUser.ID}`).then((res) => {
     res.data.sort((a,b) => a.date.localeCompare(b.date));
     res.data.forEach((item) => {
       labels.push(item.date.toString().split("T")[0]);
-      datas.push(item.steps);
+      datas.push(item.amount);
     });
   });
 
   setTimeout(() => {
-    const ctx = document.getElementById("myChart");
+    const ctx = document.getElementById("grfkn");
 
     new Chart(ctx, {
       type: "bar",
@@ -20,7 +20,7 @@ function showChart(){
         labels: labels,
         datasets: [
           {
-            label: "Lépésszám:",
+            label: "Pénz:",
             data: datas,
             borderWidth: 3,
           },
